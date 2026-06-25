@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catálogo PROFISER</title>
+
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/navbar.css">
+	<link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar-custom">
+		<div class="navbar-container">
+			<div class="div-logo">
+				<img src="assets/img/logo.webp" class="logoImg">
+			</div>
+
+			<div class="sections">
+				<ul class="nav-menu">
+					<li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+					<li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+					<li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+					<li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+					<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+					<li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+					<li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="nav-toggle">
+				<button id="menu-toggle" class="menu-toggle"> ☰ </button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="nav-lateral">
+		<ul class="nav-menu-lateral">
+			<li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+			<li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+			<li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+			<li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+			<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+			<li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+			<li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+		</ul>
+	</div>
+
+	<div class="contenedor">
+		<div class="login">
+			<h1>Login</h1>
+			<input id="email" placeholder="gmail">
+			<input id="password" type="password" placeholder="password">
+			<button class="btnEntrar" onclick="login()">Entrar</button>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+	<script src="assets/js/supabase.js"></script>
+	<script src="assets/js/login.js"></script>
+	<script src="assets/js/auth-redirect.js"></script>
+</body>

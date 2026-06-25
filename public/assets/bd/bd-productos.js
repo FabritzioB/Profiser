@@ -1,0 +1,50 @@
+const productos = [
+  {
+    id: 1,
+    etiqueta: ["mesa", "madera"],
+    nombre: "Mesa de madera",
+    precio: 249.90,
+    descripcion: "Mesa de madera para sala.",
+    descripcionLarga: "Añade calidez y estilo a tus espacios con esta mesa de madera de diseño moderno. Fabricada con materiales resistentes y acabados de alta calidad, combina funcionalidad y elegancia para complementar cualquier ambiente. Ideal para reuniones familiares, comidas especiales o como pieza central de tu decoración.",
+    material: "Madera Cedro",
+    color: "Natural",
+    medidas: "120 x 80 cm",
+    imagen: "assets/img/Mesa.webp",
+  },
+  {
+    id: 2,
+    etiqueta: ["espejo", "decorativo"],
+    nombre: "Espejo ovalado",
+    precio: 169.00,
+    descripcion: "Espejo decorativo con marco dorado.",
+    descripcionLarga: "Transforma cualquier habitación con este sofisticado espejo ovalado. Su marco dorado aporta luminosidad, amplitud visual y un toque de distinción que encaja perfectamente en salas, dormitorios o recibidores. Una pieza decorativa diseñada para destacar y elevar la estética de tu hogar.",
+    material: "Aluminio",
+    color: "Dorado",
+    medidas: "100 x 60 cm",
+    imagen: "assets/img/Espejo.webp"
+  },
+  {
+    id: 3,
+    etiqueta: ["lampara", "decorativo"],
+    nombre: "Lampara",
+    precio: 90.00,
+    descripcion: "Espejo decorativo con marco dorado.",
+    descripcionLarga: "Ilumina tus espacios con una combinación perfecta de diseño y funcionalidad. Esta lámpara decorativa aporta una luz cálida y acogedora, ideal para crear ambientes confortables en salas, dormitorios u oficinas. Su estilo contemporáneo la convierte en un elemento decorativo que atrae miradas incluso cuando está apagada.",
+    material: "Madera Cedro",
+    color: "Naranja bronce",
+    medidas: "45 x 25 cm",
+    imagen: "assets/img/Lampara.webp"
+  },
+  {
+    id: 4,
+    etiqueta: ["florero", "decorativo", "madera", "articulo"],
+    nombre: "Florero",
+    precio: 49.90,
+    descripcion: "Espejo decorativo con marco dorado.",
+    descripcionLarga: "Dale vida a tus espacios con este elegante florero decorativo. Su diseño versátil permite combinarlo con flores naturales, artificiales o utilizarlo como pieza independiente. Perfecto para mesas, estanterías o recibidores, aporta un toque de frescura, armonía y sofisticación a cualquier ambiente.",
+    material: "Madera Cedro",
+    color: "Natural",
+    medidas: "30 x 15 cm",
+    imagen: "assets/img/Florero.webp"
+  },
+];

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo PROFISER</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+        <div class="navbar-container">
+            <div class="div-logo">
+                <img src="assets/img/logo.webp" class="logoImg">
+            </div>
+
+            <div class="sections">
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+                    <li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                    <button id="logoutBtn" class="logoutBtn">Cerrar sesión</button>
+                </ul>
+            </div>
+
+            <div class="nav-toggle">
+                <button id="menu-toggle" class="menu-toggle"> ☰ </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-lateral">
+        <ul class="nav-menu-lateral">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+            <li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+            <li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+            <button id="logoutBtn" class="logoutBtn">Cerrar sesión</button>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="catalog">
+        <div class="catalog-header">
+            <h1>Productos crud</h1>
+        </div>
+
+        <div class="crud">
+            <div class="campo">
+                <input id="name" type="text" placeholder="Nombre del producto">
+            </div>
+
+            <div class="campo">
+                <input id="desc" type="text" placeholder="Descripción">
+            </div>
+            <div class="campo">
+                <input id="descLarge" type="text" placeholder="Descripción larga del producto">
+            </div>
+            <div class="campo">
+                <input id="labels" type="text" placeholder="Etiquetas">
+            </div>
+            <div class="campo">
+                <input id="material" placeholder="Material">
+            </div>
+            <div class="campo">
+                <input id="measures" type="text" placeholder="Medidas">
+            </div>
+            <div class="campo">
+                <input id="color" type="text" placeholder="Color">
+            </div>
+            <div class="campo">
+                <input id="price" type="number" placeholder="Precio">
+            </div>
+            <div class="campo">
+                <input type="file" id="image" accept="image/*">
+            </div>
+
+            <div class="button-container">
+                <button type="button" class="btn-save" onclick="guardar()">Guardar</button>
+                <button type="button" class="btn-clear" onclick="limpiar()">Limpiar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="catalog-container">
+        <div id="products" class="products-grid">
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">PROFISER</div>
+
+            <div class="footer-links">
+                <a href="../public/index.html">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <p class="footer-copy"> © 2026 PROFISER SAC - Todos los derechos reservados </p>
+        </div>
+    </footer>
+    <script src="assets/js/select-catalogo.js"></script>
+    <script src="assets/js/nav-toggle.js"></script>
+    <script src="assets/js/product-panels.js"></script>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase.js"></script>
+    <script src="assets/js/admin-auth.js"></script>
+    <script src="assets/js/admin-crud.js"></script>
+    <script src="assets/js/closeSesion.js"></script>
+</body>
+
+</html>

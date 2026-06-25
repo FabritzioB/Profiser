@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+        <div class="navbar-container">
+            <div class="div-logo">
+                <img src="assets/img/logo.webp" class="logoImg">
+            </div>
+
+            <div class="sections">
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+                    <li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle">
+                <button id="menu-toggle" class="menu-toggle"> ☰ </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-lateral">
+        <ul class="nav-menu-lateral">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+            <li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+            <li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+        </ul>
+    </div>
+
+    <section class="cart-page">
+
+        <div class="cart-container">
+
+            <div class="cart-header">
+                <h1>Mi Carrito</h1>
+                <p>Revisa los productos seleccionados antes de realizar tu pedido.</p>
+            </div>
+
+            <div id="cart-items" class="cart-items">
+
+                <!-- Producto ejemplo 
+                    <div class="cart-item">
+
+                        <img src="assets/img/Mesa.webp" alt="Mesa" class="cart-item-image">
+
+                        <div class="cart-item-info">
+
+                            <h3>Mesa de madera</h3>
+
+                            <p class="cart-price">
+                                S/ 249.90
+                            </p>
+
+                        </div>
+
+                        <div class="cart-quantity">
+
+                            <button class="qty-btn">−</button>
+
+                            <span class="qty-value">
+                                2
+                            </span>
+
+                            <button class="qty-btn">+</button>
+
+                        </div>
+
+                    </div>
+                -->
+            </div>
+
+            <div class="cart-summary">
+
+                <div class="cart-total">
+
+                    <span>Total</span>
+
+                    <strong id="cart-total">
+                        S/ 0.00
+                    </strong>
+
+                </div>
+
+                <button id="btn-whatsapp" class="btn-checkout"> Comprar por WhatsApp </button>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/nav-toggle.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase.js"></script>
+    <script src="assets/js/carrito.js"></script>
+</body>
+
+</html>

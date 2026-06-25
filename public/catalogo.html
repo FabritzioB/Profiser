@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo PROFISER</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+        <div class="navbar-container">
+            <div class="div-logo">
+                <img src="assets/img/logo.webp" class="logoImg">
+            </div>
+
+            <div class="sections">
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+                    <li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle">
+                <button id="menu-toggle" class="menu-toggle"> ☰ </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-lateral">
+        <ul class="nav-menu-lateral">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+            <li><a href="catalogo.html"><i class="fa-solid fa-box-archive"></i> Catálogo</a></li>
+            <li><a href="#beneficios"><i class="fa-solid fa-thumbs-up"></i> Beneficios</a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="catalog">
+        <div class="catalog-header">
+            <h1>CATÁLOGO</h1>
+            <p> Encuentra mesas, lámparas, espejos y artículos decorativos para transformar tus espacios.</p>
+        </div>
+
+        <div class="filters">
+            <!-- Categorías -->
+            <div class="custom-select" id="category-select">
+                <button class="select-btn">
+                    <span>Todas las categorías</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+
+                <div class="select-menu">
+                    <div class="option active" data-value="all">Todas las categorías</div>
+                    <div class="option" data-value="mesa">Mesas</div>
+                    <div class="option" data-value="lampara">Lámparas</div>
+                    <div class="option" data-value="espejo">Espejos</div>
+                    <div class="option" data-value="articulo">Artículos</div>
+                </div>
+            </div>
+
+            <!-- Precio -->
+            <div class="custom-select" id="price-select">
+                <button class="select-btn">
+                    <span>Ordenar por precio</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+
+                <div class="select-menu">
+                    <div class="option active" data-value="default">Ordenar por precio</div>
+                    <div class="option" data-value="asc">Menor a Mayor</div>
+                    <div class="option" data-value="desc">Mayor a Menor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="catalog-container">
+        <div id="products" class="products-grid">
+            <!--
+            <div class="product" data-id="1">
+                <img class="product-img" src="assets/img/Mesa.webp" alt="Mesa">
+                <div class="product-info">
+                    <span class="product-category"> # </span>
+                    <h3 class="product-name"> Nombre </h3>
+                    <p class="product-price"> S/0.00 </p>
+                    <button class="product-btn"> Detalles </button>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">PROFISER</div>
+
+            <div class="footer-links">
+                <a href="../public/index.html">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <p class="footer-copy"> © 2026 PROFISER SAC - Todos los derechos reservados </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/select-catalogo.js"></script>
+    <script src="assets/js/nav-toggle.js"></script>
+    <script src="assets/js/product-panels.js"></script>
+    <!-- <script src="assets/bd/bd-productos.js"></script> -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase.js"></script>
+    <script src="assets/js/catalogo.js"></script>
+</body>
+
+</html>

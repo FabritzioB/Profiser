@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/p-details.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body>
+    <nav class="navbar-custom">
+		<div class="navbar-container">
+			<div class="div-logo">
+				<img src="assets/img/logo.webp" class="logoImg">
+			</div>
+
+			<div class="sections">
+				<ul class="nav-menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="#beneficios">Beneficios</a></li>
+					<li><a href="carrito.html">Carrito</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div class="nav-toggle">
+				<button id="menu-toggle" class="menu-toggle"> ☰ </button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="nav-lateral">
+		<ul class="nav-menu-lateral">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="#servicios">Servicios</a></li>
+			<li><a href="catalogo.html">Catálogo</a></li>
+			<li><a href="#beneficios">Beneficios</a></li>
+			<li><a href="carrito.html">Carrito</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+	</div>
+
+    <section class="product-detail">
+        <div class="product-container">
+            <div class="product-gallery">
+                <img id="product-image" src="" alt="">
+            </div>
+
+            <div class="product-content">
+
+                <div id="product-tags" class="product-tags"></div>
+                <h1 id="product-title" class="product-title"></h1>
+                <p id="product-price" class="product-price"></p>
+                <p id="product-description" class="product-description"></p>
+
+                <div class="quantity-selector">
+                    <button id="minus-btn" type="button">-</button>
+                    <span id="quantity-value" class="quantity-value">1</span>
+                    <button id="plus-btn" type="button">+</button>
+                </div>
+
+                <div class="product-actions">
+                    <button id="add-to-cart" class="btn-cart"> Agregar al carrito </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-info">
+        <div class="info-container">
+
+            <h2>Descripción</h2>
+            <p id="product-description-long"></p>
+
+            <div class="spec-grid">
+
+                <div class="spec-item">
+                    <span>Material</span>
+                    <strong id="material"></strong>
+                </div>
+
+                <div class="spec-item">
+                    <span>Color</span>
+                    <strong id="color"></strong>
+                </div>
+
+                <div class="spec-item">
+                    <span>Medidas</span>
+                    <strong id="medidas"></strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo"> PROFISER </div>
+            <div class="footer-links">
+                <a href="../public/index.html">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <p class="footer-copy"> © 2026 PROFISER SAC - Todos los derechos reservados </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/nav-toggle.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase.js"></script>
+    <script src="assets/js/product-detail.js"></script>
+    <script src="assets/js/carrito.js"></script>
+</body>
+
+</html>
